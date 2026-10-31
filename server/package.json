@@ -1,7 +1,7 @@
 {
   "name": "mail-hub",
   "version": "2.0.0",
-  "description": "多邮箱聚合与 TOTP 二步验证面板",
+  "description": "邮箱验证工作台：多邮箱聚合收件 · TOTP 二步验证 · 多重登录验证",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

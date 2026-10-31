@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 
     app.listen(PORT, HOST, () => {
         console.log('========================================');
-        console.log('  邮箱聚合中心 运行中');
+        console.log('  邮箱验证工作台 MailVault 运行中');
         console.log(`  本机访问: http://localhost:${PORT}`);
         console.log(`  局域网访问: http://<本机IP>:${PORT}`);
         // 只在首次创建管理员时打印初始密码，避免每次启动都泄露到日志

@@ -1,4 +1,4 @@
-# 邮箱聚合中心 · 容器镜像
+# 邮箱验证工作台 MailVault · 容器镜像
 # 构建上下文为 SmsCodeWeb 根目录：
 #   docker build -t mail-hub:2.0.0 .
 # 依赖均为纯 JS（无原生编译），alpine 小镜像即可运行

@@ -1,5 +1,5 @@
 /**
- * 邮箱聚合中心 — 前端主逻辑
+ * 邮箱验证工作台 MailVault — 前端主逻辑
  */
 const API = window.location.origin;
 const LS_TOKEN = 'mailhub_token';

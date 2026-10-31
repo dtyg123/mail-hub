@@ -20,7 +20,7 @@ const SEED_PATH = process.env.SEED_PATH || path.join(__dirname, 'seed.php');
 
 const SEED_TEMPLATE = `<?php
 /**
- * 邮箱聚合中心 · 数据加密种子
+ * 邮箱验证工作台 MailVault · 数据加密种子
  * 由程序在首次启动时自动生成 —— 请勿修改、备份到安全位置
  * 删除本文件将导致已加密数据（邮箱授权码、动态令牌密钥）永久无法解密
  */

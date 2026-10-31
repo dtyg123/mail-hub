@@ -1,0 +1,12 @@
+# 自动识别文本/二进制
+* text=auto
+
+# Windows 批处理必须保留 CRLF 才能运行
+*.bat text eol=crlf
+
+# Linux/Docker/CI 中执行的文件必须是 LF
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.js text eol=lf
+*.json text eol=lf

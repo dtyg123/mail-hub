@@ -1,0 +1,14 @@
+# 构建时排除：依赖、运行数据、密钥、日志、开发脚本
+node_modules
+**/node_modules
+db
+**/db/*.db
+*.log
+.env
+server/.env
+server/seed.php
+server/err.log
+server/out.log
+启动服务器.bat
+.git
+.github

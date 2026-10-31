@@ -1,0 +1,21 @@
+# 本地/任意 Docker 环境运行：
+#   docker compose up -d --build
+# 数据与加密种子保存在命名卷 mail-hub-data，容器重建不丢失
+services:
+  mail-hub:
+    build: .
+    image: mail-hub:2.0.0
+    container_name: mail-hub
+    ports:
+      - "3600:3600"
+    environment:
+      # 首次启动用它创建管理员密码（启动后改掉即可，改后此变量不再生效）
+      ADMIN_PASSWORD: admin123
+      # 随机长字符串，JWT 签名密钥
+      JWT_SECRET: please-change-this-to-a-long-random-string
+    volumes:
+      - mail-hub-data:/data
+    restart: unless-stopped
+
+volumes:
+  mail-hub-data:

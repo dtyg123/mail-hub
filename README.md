@@ -1,6 +1,6 @@
 # 邮箱验证工作台 MailVault
 
-多邮箱账号统一收件 · TOTP 动态令牌二步验证 · 自定义多重登录验证 · 私密部署的单用户 Web 应用。
+多邮箱账号统一收件 · TOTP 动态令牌 · 自定义多重登录验证 · 私密部署的单用户 Web 应用。
 
 纯 Node.js + 原生 HTML/CSS/JS 实现，无前端框架，一条命令即可跑起来；提供 Docker 镜像一键部署。
 
@@ -16,19 +16,19 @@
 
 ### Docker（推荐）
 
-```bash
+````bash
 docker compose up -d --build
-```
+````
 
 访问 `http://localhost:3600`，初始密码见 compose 中 `ADMIN_PASSWORD`（首次启动后请在网页「设置」中修改）。
 
 ### 直接运行
 
-```bash
+````bash
 cd server
 npm install
 npm start
-```
+````
 
 ## ⚙️ 环境变量
 
@@ -49,7 +49,7 @@ npm start
 
 已适配雨云 RCA 模板（环境变量 + 持久化卷 + 端口），详细参数见 [雨云部署指南.md](./雨云部署指南.md)。
 
-[![通过雨云一键部署](https://rainyun-apps.cn-nb1.rains3.com/materials/deploy-on-rainyun-cn.svg)](https://app.rainyun.com/apps/rca/store/<应用ID>?ref=<你的UID>)
+[![通过雨云一键部署](https://rainyun-apps.cn-nb1.rains3.com/materials/deploy-on-rainyun-cn.svg)](https://app.rainyun.com/apps/rca/store/8121?ref=634485)
 
 ## 📁 结构
 

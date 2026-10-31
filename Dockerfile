@@ -17,7 +17,7 @@ COPY client/ ./client/
 # 运行期配置（雨云模板中可用环境变量覆盖）
 # DB_PATH / SEED_PATH 必须落在持久化卷 /data 内，容器重建后数据与加密种子才不会丢失
 ENV NODE_ENV=production \
-    PORT=3600 \
+    PORT=80 \
     HOST=0.0.0.0 \
     DB_PATH=/data/codes.db \
     SEED_PATH=/data/seed.php
@@ -25,7 +25,7 @@ ENV NODE_ENV=production \
 # 持久化卷：SQLite 数据库 + 加密种子 seed.php
 VOLUME ["/data"]
 
-EXPOSE 3600
+EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD wget -qO- "http://127.0.0.1:${PORT}/api/health" || exit 1

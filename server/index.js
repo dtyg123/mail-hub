@@ -6,7 +6,7 @@ const compression = require('compression');
 const { setupRoutes } = require('./routes');
 
 const app = express();
-const PORT = process.env.PORT || 3600;
+const PORT = process.env.PORT || 80;
 const HOST = process.env.HOST || '0.0.0.0';
 
 // 经反向代理（雨云云应用网关）部署时，取 X-Forwarded-For 中的真实客户端 IP，

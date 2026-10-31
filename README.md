@@ -20,7 +20,7 @@
 docker compose up -d --build
 ````
 
-访问 `http://localhost:3600`，初始密码见 compose 中 `ADMIN_PASSWORD`（首次启动后请在网页「设置」中修改）。
+访问 `http://localhost:80` 或 `http://localhost`，初始密码见 compose 中 `ADMIN_PASSWORD`（首次启动后请在网页「设置」中修改）。
 
 ### 直接运行
 
@@ -34,7 +34,7 @@ npm start
 
 | 变量 | 默认值 | 说明 |
 |---|---|---|
-| `PORT` | `3600` | 监听端口 |
+| `PORT` | `80` | 监听端口 |
 | `HOST` | `0.0.0.0` | 监听地址 |
 | `ADMIN_PASSWORD` | `admin123` | **仅首次启动**创建管理员时生效 |
 | `JWT_SECRET` | 内置值 | JWT 签名密钥，请改成随机长字符串 |

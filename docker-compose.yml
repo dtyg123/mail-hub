@@ -7,7 +7,7 @@ services:
     image: mail-hub:2.0.0
     container_name: mail-hub
     ports:
-      - "3600:3600"
+      - "80:80"
     environment:
       # 首次启动用它创建管理员密码（启动后改掉即可，改后此变量不再生效）
       ADMIN_PASSWORD: admin123
